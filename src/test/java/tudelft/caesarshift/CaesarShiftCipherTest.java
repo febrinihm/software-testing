@@ -17,4 +17,10 @@ public class CaesarShiftCipherTest {
         String result = shift.CaesarShiftCipher("xyz", 3);
         Assertions.assertEquals("abc", result);
     }
+
+    @Test
+    public void testmessage3(){
+        String result = new CaesarShiftCipher().CaesarShiftCipher("a",2);
+        Assertions.assertEquals("c", result);
+    }
 }
